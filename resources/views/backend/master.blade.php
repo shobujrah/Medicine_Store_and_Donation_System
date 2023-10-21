@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Medicine Store</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{url('vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -21,20 +21,21 @@
     <!-- Custom styles for this template-->
     <link href="{{url('css/sb-admin-2.min.css')}}" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="{{url('css/styles.css')}}" rel="stylesheet" />
 
-   
 
 </head>
 
 <body id="page-top">
 
     <!-- Page Wrapper -->
-    
+
  @include('backend.fixed.sidebar')
 
 
 
-                 
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -42,7 +43,7 @@
             <div id="content">
 
     <!-- Topbar -->
-   
+
 
 @include('backend.fixed.header')
 
@@ -53,27 +54,30 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+
+
+
+                     </div>
 
                     <!-- Content Row -->
                     <div class="row">
 
-                        @yield('content')
 
-                        </div>
+
+
                     </div>
 
-                </div>
-                <!-- /.container-fluid -->
 
-            </div>
+                    <!-- /.container-fluid -->
+                    <div>
+                    @yield('content')
+
+                   </div>
+                </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            
+
 
 @include('backend.fixed.footer')
 
@@ -96,6 +100,8 @@
     <script src="{{url('js/demo/chart-area-demo.js')}}"></script>
     <script src="{{url('js/demo/chart-pie-demo.js')}}"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="{{url('js/scripts.js')}}"></script>
 
 
 
