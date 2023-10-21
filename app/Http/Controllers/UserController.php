@@ -41,6 +41,10 @@ class UserController extends Controller
     }
 
 
+   public function assign()
+   {
+    return view ('backend.pages.roleassign');
+   }
 
 
 }

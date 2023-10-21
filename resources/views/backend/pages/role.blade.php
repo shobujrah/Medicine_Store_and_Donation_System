@@ -29,7 +29,9 @@
             <td>{{$role->name}}</td>
             <td>{{$role->status}}</td>
             <td>
-            <button type="button" class="btn btn-primary">Assign</button>
+            <a class="btn btn-primary" href="{{route('assign')}}" role="button">Assign</a>
+            <!-- <button class="btn btn-primary" type="submit">Button</button> -->
+            <!-- <button href="{{route('assign')}}" type="button" class="btn btn-primary">Assign</button> -->
             </td>
         <ul>
 
