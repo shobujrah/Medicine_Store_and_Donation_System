@@ -28,17 +28,9 @@
             <th scope="row">{{$role->id}}</th>
             <td>{{$role->name}}</td>
             <td>{{$role->status}}</td>
-            <td> <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Assign
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-
-                </div>
-                </div></td>
-
             <td>
+            <button type="button" class="btn btn-primary">Assign</button>
+            </td>
         <ul>
 
 

@@ -34,7 +34,11 @@ class UserController extends Controller
 
     }
 
+    public function user(){
 
+        $users=Role::paginate (5);
+        return view ('backend.pages.role', compact('roles'));
+    }
 
 
 

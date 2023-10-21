@@ -29,6 +29,6 @@ Route::get('role', [UserController::class, 'role'])->name('role');
 Route::get('role-create-form', [UserController::class, 'form'])->name('role.create.form');
 Route::post('role-store-form', [UserController::class, 'store'])->name('role.store.form');
 
-
+Route::get('user', [UserController::class, 'user'])->name('user');
 
 
